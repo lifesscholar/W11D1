@@ -12,6 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.fetchAllPokemon = fetchAllPokemon;
   window.getState = store.getState;
   window.dispatch = store.dispatch;
-  
-  ReactDOM.render(<div>hello from entry point store={store}</div>, root)
+
+  ReactDOM.render(<div store={store}> this is a div </div>, root);
 });

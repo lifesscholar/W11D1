@@ -135,7 +135,9 @@ document.addEventListener('DOMContentLoaded', function () {
   window.fetchAllPokemon = _util_api_util__WEBPACK_IMPORTED_MODULE_3__["fetchAllPokemon"];
   window.getState = store.getState;
   window.dispatch = store.dispatch;
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "hello from entry point store=", store), root);
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    store: store
+  }, " this is a div "), root);
 });
 
 /***/ }),
